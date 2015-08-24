@@ -8,9 +8,62 @@
 // Structure
 $pageWidth: 1000px;
 
-// Text Selection
-$selectionColor: orange;
+
 
 // Colors
-$red: red;
-$blue: blue;
+  // VARIABLES
+
+  $news:        #c00;
+  $news-lt:     #f00;
+  $news-dk:     #900;
+  $news-tr:     rgba($news, .9);
+
+  $sport:       #366;
+  $sport-dk:    #033;
+  $sport-tr:    rgba($sport, .9);
+
+  $showbiz:     #939;
+  $showbiz-dk:  #606;
+  $showbiz-tr:  rgba($showbiz, .9);
+
+  $feats:       #ab959a;
+  $feats-dk:    #333;
+  $feats-tr:    rgba($feats, .9);
+
+  $fab:         #ec338e;
+  $fab-dk:      #a21f61;
+  $fab-tr:      rgba($fab, .9);
+
+  $column:      #369;
+  $column-dk:   #036;
+  $column-tr:   rgba($column, .9);
+
+  $extras:      #090;
+  $extras-dk:   #060;
+  $extras-tr:   rgba($extras, .9);
+
+  $bk-dk:    #333;
+  $bk-md:    #666;
+  $bk-lt:    #999;
+  $bk-tr:    rgba($bk-md, .8);
+
+  $wh-dk:    #aaa;
+  $wh-md:    #ddd;
+  $wh-lt:    #fff;
+  $wh-tr:    rgba($wh-lt, .8);
+
+  $beige:       #ece7d8;
+
+  $fb:          #335795;
+  $tw:          #4099ff;
+  $go:          #d34836;
+
+  $link:        $news-dk;
+  $link-hover:  $news;
+  $link-active: $news-tr;
+
+  $sprite:      url(cssimg/sol-sprite.svg);
+
+
+// Text Selection
+  $selectionColor: $news;

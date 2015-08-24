@@ -6,48 +6,64 @@
 	clear: both;
 	display: block;
 	float: left;
-	width: 100%;
-}
+	// width: 100%;
+	height: 100vh;
+	background-color: $news;
+	color: $wh-lt;
+	background-image: linear-gradient(to top, rgba(0,0,0,.2) 0%, transparent 50%, transparent 100%);
+	padding: 1em;
+	margin-right: 2em;
 
-.main-navigation ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
+	
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+		font-weight: 700;
+		line-height: 2;
 
-.main-navigation li {
-	float: left;
-	position: relative;
-}
+		ul {
+			display: none;
+			text-transform: none;
+			margin-left: 1em;
+			font-weight: 400;
+			font-style: italic;
 
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
+			a {
+				color: $bk-dk;
+			}
+			
+			ul {
+				left: 100%;
+				top: 0;
 
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	display: none;
-	float: left;
-	left: 0;
-	position: absolute;
-	top: 1.5em;
-	z-index: 99999;
-}
+				a {
+					width: 200px;
+				}
+			}
+			li {
+				
+			}
 
-.main-navigation ul ul ul {
-	left: 100%;
-	top: 0;
-}
+		}
+	}
 
-.main-navigation ul ul a {
-	width: 200px;
-}
+	li {
+		
+		&:hover {
+			& > a {
 
-.main-navigation ul ul li {
-}
+			}
+		}
+	}
 
-.main-navigation li:hover > a {
+	a {
+		display: block;
+		text-decoration: none;
+		color: $wh-lt;
+	}
+
 }
 
 .main-navigation ul ul :hover > a {
