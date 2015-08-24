@@ -33,13 +33,18 @@ html {
    Links
    ========================================================================== */
 
-a,
-a:visited {
+a {
 	color: $news;
   text-decoration: none;
-}
-a:hover {
-	color: $news-dk;
+  transition: all .4s ease-in-out;
+
+  &:hover {
+    color: $news-dk;
+  }
+  &:visited {
+
+  }
+
 }
 
 
