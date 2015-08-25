@@ -45,12 +45,32 @@ $pageWidth: 1000px;
   $bk-dk:    #333;
   $bk-md:    #666;
   $bk-lt:    #999;
-  $bk-tr:    rgba($bk-md, .8);
+  $bk-tr-0:    rgba($bk-md, 0);
+  $bk-tr-1:    rgba($bk-md, .1);
+  $bk-tr-2:    rgba($bk-md, .2);
+  $bk-tr-3:    rgba($bk-md, .3);
+  $bk-tr-4:    rgba($bk-md, .4);
+  $bk-tr-5:    rgba($bk-md, .5);
+  $bk-tr-6:    rgba($bk-md, .6);
+  $bk-tr-7:    rgba($bk-md, .7);
+  $bk-tr-8:    rgba($bk-md, .8);
+  $bk-tr-9:    rgba($bk-md, .9);
+  $bk-tr-9:    rgba($bk-md, .9);
 
   $wh-dk:    #aaa;
   $wh-md:    #ddd;
   $wh-lt:    #fff;
-  $wh-tr:    rgba($wh-lt, .8);
+  $wh-tr-0:    rgba($wh-md, 0);
+  $wh-tr-1:    rgba($wh-md, .1);
+  $wh-tr-2:    rgba($wh-md, .2);
+  $wh-tr-3:    rgba($wh-md, .3);
+  $wh-tr-4:    rgba($wh-md, .4);
+  $wh-tr-5:    rgba($wh-md, .5);
+  $wh-tr-6:    rgba($wh-md, .6);
+  $wh-tr-7:    rgba($wh-md, .7);
+  $wh-tr-8:    rgba($wh-md, .8);
+  $wh-tr-9:    rgba($wh-md, .9);
+  $wh-tr-9:    rgba($wh-md, .9);
 
   $beige:       #ece7d8;
 

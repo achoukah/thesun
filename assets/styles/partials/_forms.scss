@@ -4,6 +4,12 @@
 
 form { }
 
+input {
+  -webkit-appearance: none;
+  border: 0;
+  font-family: Noto Sans, sans-serif;
+}
+
 /* Gravity Forms */
 
 .gform_wrapper { }
@@ -15,3 +21,9 @@ form { }
 .ginput_container { }
 .gform_footer { }
 .gform_button { }
+
+
+// SEARCH FORM 
+  #search {
+    
+  }

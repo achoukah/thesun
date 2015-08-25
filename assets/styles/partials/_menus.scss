@@ -12,28 +12,41 @@
 	background-image: linear-gradient(to top, rgba(0,0,0,.2) 0%, transparent 75%, transparent 100%);
 	margin-right: 2em;
 	font-size: 20px;
-	// position: fixed;
+	position: fixed;
+	width: 80px;
+	overflow: hidden;
 
-	// width: 100vw;
- //  position: fixed;
- //  top: 0;
- //  right: 0;
- //  bottom: 0;
- //  left: 0;
- //  z-index: 0;
+	transition: all .2s ease-in-out;
+
+	box-shadow: 0;
 
 	.masthead {
 		// margin-bottom: 2em;
 		padding: 1em;
+		overflow: hidden;
 
 		a {
 			display: block;
 			width: 101px;
 			height: 31px;
-			background-image: url(assets/images/icon-sun.svg);
+			background-image: url(assets/images/icon-s.svg);
 			background-position: 0 0;
 			background-repeat: no-repeat;
 			background-size: contain;
+
+			&:hover {
+				background: inherit;
+			}
+		}
+	}
+
+	#search {
+		input[type=text] {
+			width: 0;
+			float: left;
+		}
+		input[type=submit] {
+			display: none;
 		}
 	}
 
@@ -45,18 +58,33 @@
 		text-transform: uppercase;
 		font-style: italic;
 		font-weight: 700;
+		width: 0;
+		overflow: hidden;
+		transition: all .2s ease-in-out;
+		color: $wh-tr-0;
+
+		li > ul {
+			height: 0;
+			overflow: hidden;
+			
+		}
+		li:hover > ul {
+			height: auto;
+		}
 
 
 		ul {
 			// display: none;
 			text-transform: none;
-			margin-left: 1em;
 			font-weight: 400;
-			// height: 0;
-						
+			text-indent: 1em;
 
 			a {
 				color: $bk-dk;
+
+				&:hover {
+					color: $wh-lt;
+				}
 			}
 			
 			ul {
@@ -66,6 +94,11 @@
 				a {
 					width: 200px;
 				}
+				:hover > a {
+
+				}
+				a:hover {
+				}
 			}
 			li {
 				
@@ -74,7 +107,6 @@
 	}
 
 	li {
-		// border: thin solid rebeccapurple;
 
 		&:before {
 			display: inline-block;
@@ -101,28 +133,43 @@
 			background: $news-dk;
 		}
 	}
-
-}
-
-.main-navigation ul ul :hover > a {
-}
-
-.main-navigation ul ul a:hover {
-}
-
-.main-navigation ul li > ul {
-	height: 0;
-	overflow: hidden;
 	
+	
+
+	.current_page_item a,
+	.current-menu-item a {
+	}
+
+
+// NAV HOVER STATE
+
+	&:hover {
+		width: 300px;
+		box-shadow: .5em 0 1em $bk-tr-4;
+
+		.masthead {
+
+			a {
+				background-image: url(assets/images/icon-sun.svg);
+				background-position: 0 0;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+		ul {
+			width: auto;
+			color: $wh-tr-0;
+		}
+	}
 }
 
-.main-navigation ul li:hover > ul {
-	height: auto;
-}
 
-.main-navigation .current_page_item a,
-.main-navigation .current-menu-item a {
-}
+
+
+
+
+
+
 
 /* Small menu */
 .menu-toggle {
