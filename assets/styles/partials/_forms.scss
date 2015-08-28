@@ -8,6 +8,11 @@ input {
   -webkit-appearance: none;
   border: 0;
   font-family: Noto Sans, sans-serif;
+  padding: 1em;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 /* Gravity Forms */

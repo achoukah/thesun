@@ -43,10 +43,28 @@
 	#search {
 		input[type=text] {
 			width: 0;
-			float: left;
+			opacity: 0;
+			transition: all .2s ease-in-out;
+			background: $news;
+			border: thin solid $bk-md;
+			transition: all .2s ease-in-out;
+
+			
+			&:focus {
+				background: $wh-lt;
+				border-color: transparent;
+			}
 		}
 		input[type=submit] {
-			display: none;
+			
+
+			&:after {
+				float: left;
+				width: 3em;
+				height: 3em;
+				background: green;
+				content: '';
+			}
 		}
 	}
 
@@ -66,7 +84,7 @@
 		li > ul {
 			height: 0;
 			overflow: hidden;
-			
+			transition: all .2s ease-in-out;
 		}
 		li:hover > ul {
 			height: auto;
@@ -159,6 +177,15 @@
 		ul {
 			width: auto;
 			color: $wh-tr-0;
+		}
+		#search {
+			input[type=text] {
+				width: calc(100% - 3em);
+				opacity: 1;
+			}
+			input[type=submit] {
+				display: none;
+			}
 		}
 	}
 }
